@@ -1,0 +1,15 @@
+{
+  "application": "3wait dinghy stage",
+  "pipelines": [
+    {
+      "application": "3wait dinghy stage",
+      "keepWaitingPipelines": false,
+      "limitConcurrent": true,
+      "name": "Wait Pipeline Templates",
+      "stages": [
+         {{ module "wait.stage.module" }}
+      ],
+      "triggers": []
+    }
+  ]
+}
